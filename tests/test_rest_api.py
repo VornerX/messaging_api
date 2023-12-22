@@ -1,13 +1,12 @@
 import pytest
-from fastapi.testclient import TestClient
 from fastapi import status
+from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from messaging_api.main import app
 from messaging_api.crud import delete_user
-from messaging_api.database import Base, SQLALCHEMY_DATABASE_URL
-
+from messaging_api.database import SQLALCHEMY_DATABASE_URL, Base
+from messaging_api.main import app
 
 client = TestClient(app)
 

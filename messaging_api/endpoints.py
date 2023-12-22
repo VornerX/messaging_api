@@ -1,9 +1,9 @@
 import hashlib
 
-from fastapi import Depends, HTTPException, Header, status
+from fastapi import Depends, Header, HTTPException, status
 from sqlalchemy.orm import Session
 
-from messaging_api import crud, database, schemas, models
+from messaging_api import crud, database, models, schemas
 
 
 def get_db():

@@ -1,6 +1,6 @@
 from fastapi.routing import APIRoute
 
-from messaging_api import schemas, endpoints
+from messaging_api import endpoints, schemas
 
 AUTH_HEADER_REMINDER_TEXT = (
     '<br>The authentication headers `username` and `password` are required."'
